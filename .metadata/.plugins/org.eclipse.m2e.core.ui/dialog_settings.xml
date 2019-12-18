@@ -17,6 +17,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\JavaPractice\Automation\src"/>
 			<item value="D:\JavaPractice"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -41,6 +42,8 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="boook.Absolute"/>
+			<item value="boook.testing"/>
 			<item value="book.Training"/>
 			<item value="book.mavenSelenium"/>
 			<item value="book.seleniumAutomation"/>
@@ -48,9 +51,12 @@
 			<item value="org.qa"/>
 		</list>
 		<list key="groupId">
+			<item value="boook"/>
 			<item value="book"/>
 		</list>
 		<list key="artifactId">
+			<item value="Absolute"/>
+			<item value="testing"/>
 			<item value="Training"/>
 			<item value="mavenSelenium"/>
 			<item value="seleniumAutomation"/>

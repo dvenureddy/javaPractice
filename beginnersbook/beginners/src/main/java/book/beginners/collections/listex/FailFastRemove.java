@@ -3,6 +3,11 @@ package book.beginners.collections.listex;
 import java.util.ArrayList;
 import java.util.Iterator;
 
+/**
+ * Array List is Fail fast
+ * @author vendolla
+ *
+ */
 public class FailFastRemove {
 
 	public static void main(String[] args) {

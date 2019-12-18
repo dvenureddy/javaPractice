@@ -4,7 +4,7 @@ public class BankValidation {
 
 	public static void main(String[] args) {
 
-		System.out.println("Minimum Value " + USBank.MIN_BAL);
+		System.out.println("Minimum Value " + US.MIN_BAL);
 		System.out.println("--------------------");
 		HSBCBank hsb = new HSBCBank();
 		hsb.debit();
@@ -17,15 +17,15 @@ public class BankValidation {
 		System.out.println();
 		
 		//Dynamic Polymorphism
-		USBank usb = new HSBCBank();
+		US usb = new HSBCBank();
 		usb.debit();
 		usb.credit();
 		usb.transferMoney();
 		System.out.println("----------------");
 		
 		
-		BrazilBank bb = new HSBCBank();
+		Brazil bb = new HSBCBank();
 		bb.mutualFunnd();
-		System.out.println("Minimum mutual fund " + BrazilBank.MIN_FUND);
+		System.out.println("Minimum mutual fund " + Brazil.MIN_FUND);
 	}
 }

@@ -2,7 +2,7 @@ package oopConcepts;
 
 // We are multiple inheritance 
 // Is-a relationship
-public class HSBCBank implements USBank, BrazilBank {
+public class HSBCBank implements US, Brazil {
 
 	// If a class is implementing any interface, then it is mandatory to
 	// define/implement all the methods of Interface.

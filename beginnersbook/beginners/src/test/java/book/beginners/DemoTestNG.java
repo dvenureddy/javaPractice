@@ -15,7 +15,7 @@ public class DemoTestNG {
 	public void gmailLogin() {
 		//System.setProperty("webdriver.gecko.driver",	"D:/JavaPractice/beginnersbook/beginners/src/test/java/book/beginners/resources/geckodriver.exe");
 		//FirefoxDriver driver = new FirefoxDriver();
-		System.setProperty("webdriver.chrome.driver",	"D:/JavaPractice/beginnersbook/beginners/src/test/java/book/beginners/resources/chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", ".\\src\\main\\resources\\drivers\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		
 		// launch the firefox browser and open the application url
@@ -35,21 +35,25 @@ public class DemoTestNG {
 
 	
 		// enter a valid username in the email textbox
-		WebElement username = driver.findElement(By.id("Email"));
+		WebElement username = driver.findElement(By.xpath("//input[@type='email']"));
 		username.clear();
 		username.sendKeys("TestSelenium");
+		
+		WebElement nextBtn = driver.findElement(By.xpath("//div[@id='identifierNext']"));
+		nextBtn.click();
 
+		
 		// enter a valid password in the password textbox
-		WebElement password = driver.findElement(By.id("Passwd"));
+		WebElement password = driver.findElement(By.xpath("//input[@type='password']"));
 		password.clear();
 		password.sendKeys("password123");
 
 		// click on the Sign in button
-		WebElement SignInButton = driver.findElement(By.id("signIn"));
+		WebElement SignInButton = driver.findElement(By.xpath("//div[@id='identifierNext']"));
 		SignInButton.click();
 
 		// close the web browser
-		driver.close();
+		//driver.close();
 		driver.quit();
 	}
 }
